@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+font-family: "微軟正黑體";
+}
+a:link {color:#000;}
+a:visited {color:#000;}
+a:hover {color:#000;}
+a:active {color:#000;}
+
+.active {
+  background-color: Red
+}
