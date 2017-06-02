@@ -9,7 +9,7 @@ import { Layout2Component } from './layout2/layout2.component';
 import { Layout3Component } from './layout3/layout3.component';
 import { Layout1AComponent } from './layout1/layout1-a/layout1-a.component';
 
-//import { Layout4Module } from './layout4/layout4.module';
+//import { Layout4Module } from './layout4/layout4.module'; //惰性加載需求，清除相依關係
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { Layout1AComponent } from './layout1/layout1-a/layout1-a.component';
   ],
   imports: [
     BrowserModule,
-    //Layout4Module,
+    //Layout4Module, //惰性加載需求，清除相依關係
     AppRoutingModule //底下的寫法與此方法相同，差別在將路由設定獨立出來而已
     // RouterModule.forRoot([
     //   { path: '', redirectTo: '/layout1', pathMatch: 'full' },
