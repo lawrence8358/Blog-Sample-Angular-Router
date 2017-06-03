@@ -9,7 +9,10 @@
   <a [routerLink]="[{ outlets: { popup: ['layout2'] } }]">Layout2(顯示第二路由)</a><br>
   <a routerLink="/layout3/1983" routerLinkActive="active">Layout3(Template 死寫參數)</a><br>
   <a [routerLink]="['layout3' , '2010']" routerLinkActive="active">Layout3(Template 屬性帶參數)</a><br>
-  <button (click)="goLayout3()">Layout3(Component 帶參數)</button>
+  <button (click)="goLayout3()">Layout3(Component 帶參數)</button><br><br>
+
+  <a routerLink="/admin" routerLinkActive="active">管理者區域</a>　
+  <a routerLink="/admin/admin-a" routerLinkActive="active">管理者子路由A</a>
 </fieldset>
 <fieldset>
   <legend>內容顯示區</legend>
@@ -22,9 +25,7 @@
 
 <fieldset>
   <legend>子路由示範區</legend>
-  <a routerLink="/layout4" routerLinkActive="active">Layout4</a>　
-  <a routerLink="/layout4/layout4-a" routerLinkActive="active">Layout4-A</a>　
-  <a routerLink="/layout4/layout4-b" routerLinkActive="active">Layout4-B</a>　
+  <a routerLink="/layout4" routerLinkActive="active">Layout4</a>
+  <a routerLink="/layout4/layout4-a" routerLinkActive="active">Layout4-A</a>
+  <a routerLink="/layout4/layout4-b" routerLinkActive="active">Layout4-B</a>
 </fieldset>
-
-
